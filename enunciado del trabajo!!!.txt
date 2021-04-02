@@ -1,0 +1,14 @@
+en base al sig. enunciado:
+una empresa vende productos a varios clientes. 
+se necesita conocer los datos personales de los clientes (nombre y apellido,dni,direccion y fecha de nacimiento). cada
+producto tiene un nombre y un codigo, asi como unitario. un cliente puede comprar varios productos a una empresa, y un
+mismo producto puede ser comprado por varios clientes. los productos son suministrados por diferentes proovedores.
+se deve tener en cuenta que un producto solo puede ser suministrado por un proovedor,y que un proovedor puede suminstrar 
+diferentes productos, de cada proovedor se desea conocer el cuit,nombre y direccion.
+
+se pide:
+1) desarrolle D.E.R (diagrama entidad-relacion) correspondiente. (YA ESTA ECHO)
+
+2) realice la implementacion sobre el servidor de base de datos MYSQL. (YA ESTA ECHO, SOLO ME FALTA LA TABLA PROOVEDOR)
+
+3) desarrolle una aplicacion web en PHP para gestionar la info. de clientes y proovedores (ABMS)

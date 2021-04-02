@@ -1,0 +1,13 @@
+create database ventas;
+use ventas;
+
+create table clientes(idClientes int not null auto_increment,nombre varchar (30),apellidos varchar(30),fechas_de_nacimiento varchar(30),Direccion varchar(20),primary key(idClientes))engine=innodb;
+
+create table venta(idventas int not null auto_increment,fecha date,idClientes int,primary key(idventas),foreign key(idClientes) references clientes(idClientes) on delete restrict on update cascade)engine=innodb;
+
+)engine=innodb;
+
+create table productos(idproductos int not null auto_increment,nombre varchar (30),precio varchar(30),primary key(idproductos))engine=innodb;
+
+
+set foreign_key_checks=0; create table detalleventas(iddetalle int not null auto_increment,idventas int (30),idproducto int (30),cantidad int (30),descuento decimal (18,2),primary key(idventas),foreign key(iddetalle) references ventas(idventas) on delete restrict on update cascade)engine=innodb;

@@ -1,0 +1,42 @@
+<?
+function adicionar($conn,$codigo,$nombre,$precio,$marca)
+{
+    $var=1;
+    $mysql_query="insert into productos(codigo,nombre,precio,marca) values ('$codigo','$nombre','$precio','$marca')";
+    odbc_exec($conn, $mysql) or die ($var=0);
+    return($var);
+}
+function borrar ($conn,$codigo)
+{
+    $var=1;
+    $mysql="delete from productos where codigo='".$codigo."' ";
+    odbc_exec($conn, $mysql) or die ($var=0);
+    return($var);
+}
+function borrar ($conn,$codigo)
+{
+   $var=1;
+   $mysql="delete from productos where codigo='".$codigo."' ";
+   odbc_exec($conn, $mysql) or die ($var=0);
+   return($var);
+}
+
+
+function listo ($conn) {
+$mysql="select productos.codigo,productos.nombre,precio from productos,marcas where productos.marcas=marcas.codigo";
+$rs=odbc_exec($conn,$mysql);
+
+echo ">"
+
+
+
+
+
+
+
+
+
+
+
+
+
